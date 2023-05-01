@@ -1,0 +1,322 @@
+/* ___________GENERIC__________ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* removing arrow buttons from numeric input fields */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Generic text input fields styling */
+
+.text-input,
+.text-input-2,
+.text-input-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5em;
+}
+
+.text-input label {
+  font-weight: bold;
+}
+
+.text-input input,
+.text-input-2 input {
+  font-size: 1rem;
+  padding: 0.7em;
+  outline: none;
+  border: 1px solid #12458d;
+  border-radius: 0.3em;
+}
+
+.text-input-2 label {
+  font-size: 0.8rem;
+}
+
+.text-input-3 input,
+.text-input-3 select,
+textarea {
+  font-size: 1rem;
+  padding: 0.7em;
+  outline: none;
+  border: 1px solid #57647e;
+  border-radius: 0.3em;
+}
+
+.text-input-3 label {
+  font-weight: bold;
+  color: #57647e;
+}
+
+/* Generic collabsable form section */
+
+.collapsable {
+  width: 100%;
+  background-color: #12458d;
+  padding: 0.8em 1.1em;
+  border-radius: 0.3em;
+  margin: 2.5em 0 1em 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsable .collapsable-title {
+  color: white;
+}
+
+.collapsable i {
+  background-color: white;
+  padding: 0.5em 0.6em;
+  border-radius: 50%;
+}
+
+/* checkbox and radio btn */
+
+.radio-checkbox-input {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4em;
+  margin-bottom: 0.2em;
+}
+
+/* ____________________________________________ */
+/* ________________MAIN STYLING________________ */
+/* ____________________________________________ */
+
+/* ___________BODY____________ */
+
+body {
+  min-height: 100vh;
+  color: #12458d;
+  background-color: #79b1ff;
+}
+
+/* ASSIGNMENT TITLE HEADER */
+
+.assignment-title-header {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+
+  max-width: 70rem;
+  width: 95%;
+  margin-inline: auto;
+}
+
+.assignment-title-header div {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.assignment-title-header h1 {
+  /* gradient text color */
+  background-image: linear-gradient(160deg, #00b3ff, #12458d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+}
+
+/* ___________FORM CONTAINER____________ */
+
+main {
+  width: 95%;
+  max-width: 47rem;
+  border: 7px solid #12458d;
+  margin: 5rem auto 5rem auto;
+  box-shadow: -10px 10px 12px rgb(0 0 0 / 0.3);
+  background-color: aliceblue;
+}
+
+/* ___________HEADER____________ */
+
+header {
+  padding: 2rem;
+}
+
+.header-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.header-container h2 {
+  text-align: center;
+}
+
+.header-container .header-img {
+  width: 10rem;
+  /* transform: rotateZ(80deg); */
+}
+
+.header-container .header-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ___________LINE SEPERATOR____________ */
+
+.line-seperator {
+  width: 100%;
+  border-bottom: 2px solid #12458d;
+}
+
+/* ___________FORM CONTAINER____________ */
+
+form {
+  width: 100%;
+}
+
+.form-container {
+  padding: 2rem;
+}
+
+/* POLICY CREDENTIALS */
+
+.policy-credentials {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+}
+
+.policy-credentials .text-input label {
+  font-weight: bold;
+}
+
+/* POLICYHOLDER INFORMATION */
+
+.policyholder-information-fields,
+.pet-information-fields,
+.payment-and-declaration-fields {
+  display: grid;
+  gap: 1em;
+}
+
+.form-section-heading {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* PET INFORMATION */
+
+.radio-input-heading {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.radio-input-section .radio-inputs,
+.radio-inputs .radio-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-inputs .radio-input {
+  gap: 0.5em;
+}
+
+/* PAYMENT AND DECLARATION */
+
+.payment-mode .payment-mode-heading,
+.declaration .declaration-heading {
+  font-weight: bold;
+  margin-bottom: 0.8em;
+}
+
+.signature input {
+  width: 100%;
+}
+
+/* FORM LINE SEPERATOR */
+
+form .line-seperator {
+  margin: 2rem 0;
+}
+
+/* FORM SUBMIT BTN */
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.form-submit-btn {
+  border: none;
+  outline: none;
+  background-color: #12458d;
+  color: white;
+  padding: 1em 4em;
+  border-radius: 0.3em;
+}
+
+/* ___________________________________ */
+/* __________MEDIA QUERIES____________ */
+/* ___________________________________ */
+
+/* _____________DESKTOP VERSION_______________ */
+
+@media (min-width: 550px) {
+  /* _________GENERIC_________ */
+
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  .span-all {
+    grid-column: 1/-1;
+  }
+
+  /* ___________HEADER____________ */
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* POLICY CREDENTIALS + PAYMENT AND DECLARATION*/
+
+  .policy-credentials,
+  .payment-and-declaration-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PET INFORMATION */
+
+  .pet-information-fields {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pets' Insurance Claim Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/72af40638e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="assignment-title-header">
+      <div class="assignment-title">Quiz#2:</div>
+      <h1 class="assignment-name">Insurance Company Form</h1>
+    </div>
+
+    <!-- FORM CONTAINER -->
+    <main>
+      <!-- FORM HEADER -->
+      <header>
+        <div class="header-container">
+          <h2>Form to Claim Pet Insurance</h2>
+          <div class="header-img"><img src="header-img.png" alt="" /></div>
+        </div>
+      </header>
+
+      <!-- LINE SEPERATOR -->
+      <div class="line-seperator"></div>
+
+      <!-- FORM CONTAINER -->
+      <section class="form-container">
+        <form action="#">
+          <!-- Policy credentials -->
+          <section class="policy-credentials">
+            <div class="text-input">
+              <label for="policy-number">Policy Number</label>
+              <input type="number" name="policy-number" id="policy-number" />
+            </div>
+            <div class="text-input">
+              <label for="policy-start-date">Policy Start Date</label>
+              <input type="date" name="policy-start-date" id="policy-start-date" />
+            </div>
+          </section>
+
+          <!-- Policyholder information -->
+          <section class="policyholder-information">
+            <div class="collapsable">
+              <div class="collapsable-title">Policyholder Information</div>
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div class="policyholder-information-fields">
+              <div class="text-input span-2">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" />
+              </div>
+              <div class="text-input">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="someone@example.com"
+                />
+              </div>
+              <div class="text-input">
+                <label for="phone-number">Phone Number</label>
+                <input
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder="00000000000"
+                />
+              </div>
+              <div class="form-section-heading">Address</div>
+              <div class="text-input-2 address-field span-2">
+                <input type="text" name="street-address" id="address" />
+                <label for="address">Street Address</label>
+              </div>
+              <div class="text-input-2">
+                <input type="text" name="city" id="city" />
+                <label for="city">City</label>
+              </div>
+              <div class="text-input-2">
+                <input type="text" name="province" id="province" />
+                <label for="province">State / Province</label>
+              </div>
+              <div class="text-input-2 span-2">
+                <input type="number" name="zipcode" id="zipcode" />
+                <label for="zipcode">Postal / Zipcode</label>
+              </div>
+            </div>
+          </section>
+
+          <section class="pet-information">
+            <div class="collapsable">
+              <div class="collapsable-title">Pet & Claim</div>
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div class="pet-information-fields">
+              <div class="text-input span-3">
+                <label for="pet-name">Pet's Name</label>
+                <input type="text" name="pet-name" id="pet-name" />
+              </div>
+
+              <div class="form-section-heading span-all">Pet's</div>
+              <div class="text-input-2 span-2">
+                <input type="text" name="pet-sex" id="sex" />
+                <label for="sex">Sex</label>
+              </div>
+              <div class="text-input-2 span-2">
+                <input type="text" name="pet-breed" id="breed" />
+                <label for="breed">Breed</label>
+              </div>
+              <div class="text-input-2 span-2">
+                <input type="text" name="pet-color" id="color" />
+                <label for="color">Color(s)</label>
+              </div>
+              <div class="text-input span-3">
+                <label for="date-of-birth">Date of Birth</label>
+                <input type="date" name="date-of-birth" id="date-of-birth" />
+              </div>
+              <div class="text-input span-3">
+                <label for="date-of-purchase">Date of Purchase</label>
+                <input type="date" name="date-of-purchase" id="date-of-purchase" />
+              </div>
+
+              <div class="radio-input-section span-3">
+                <div class="radio-input-heading">
+                  Your pet have any other insurance policy?
+                </div>
+                <div class="radio-inputs">
+                  <div class="radio-input">
+                    <input
+                      type="radio"
+                      name="pet-another-insurance-policy"
+                      id="yes"
+                      value="yes"
+                    />
+                    <label for="yes">Yes</label>
+                  </div>
+                  <div class="radio-input">
+                    <input
+                      type="radio"
+                      name="pet-another-insurance-policy"
+                      id="no"
+                      value="no"
+                    />
+                    <label for="no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-section-heading span-all">
+                Please list all the illness, injuries your pet get and
+                treatments, vaccinations your pet received
+              </div>
+              <div class="text-input-3 span-2">
+                <label for="condition">Disease Condition / Symptoms</label>
+                <input type="text" name="disease-condition" id="condition" />
+              </div>
+              <div class="text-input-3 span-2">
+                <label for="case">Case</label>
+                <select name="case" id="case">
+                  <option value="">Select Case</option>
+                  <option value="injury">Injury</option>
+                  <option value="illness">Illness</option>
+                  <option value="treatment">Treatment</option>
+                  <option value="vaccination">Vaccination</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="text-input-3 span-2">
+                <label for="disease-date">Disease Date</label>
+                <input type="date" name="disease-date" id="disease-date" />
+              </div>
+              <div class="text-input-3 span-3">
+                <label for="disease-notes">Notes</label>
+                <textarea name="disease-notes" id="disease-notes cols="30" rows="8"></textarea>
+              </div>
+            </div>
+          </section>
+
+          <section class="payment-and-declaration">
+            <div class="collapsable">
+              <div class="collapsable-title">Payment & Declaration</div>
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div class="payment-and-declaration-fields">
+              <div class="payment-mode span-2">
+                <div class="payment-mode-heading">
+                  If your insurance premium is collected by direct debit, claim payments will be made directly into your bank account. Do you require direct payment into bank account?
+                </div>
+                <div class="payment-mode-options">
+                  <div class="radio-checkbox-input">
+                    <input
+                      type="radio"
+                      name="payment-mode"
+                      id="yes-direct-bank"
+                      value="yes-direct-bank"
+                    />
+                    <label for="yes-direct-bank">Yes, please pay directly to my bank account</label>
+                  </div>
+
+                  <div class="radio-checkbox-input">
+                    <input
+                      type="radio"
+                      name="payment-mode"
+                      id="yes-direct-vet"
+                      value="yes-direct-vet"
+                    />
+                    <label for="yes-direct-vet">Yes, please pay directly to my vet</label>
+                  </div>
+
+                  <div class="radio-checkbox-input">
+                    <input
+                      type="radio"
+                      name="payment-mode"
+                      id="no-other"
+                      value="no-other"
+                    />
+                    <label for="no-other">Other</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="declaration span-2">
+                <div class="declaration-heading">
+                  I, policyholder, agree with the following statements
+                </div>
+                <div class="declaration-options">
+                  <div class="radio-checkbox-input">
+                    <input
+                      type="checkbox"
+                      name="complete-accurate-information"
+                      id="complete-accurate-information"
+                      value="yes"
+                    />
+                    <label for="complete-accurate-information">I declare all of the information supplied on this claim form is complete and accurate.</label>
+                  </div>
+                </div>
+
+                <div class="radio-checkbox-input">
+                  <input
+                    type="checkbox"
+                    name="policy-claim"
+                    id="policy-claim"
+                    value="yes"
+                  />
+                  <label for="policy-claim">This claim is made in accordance with my policy.</label>
+                </div>
+
+                <div class="radio-checkbox-input">
+                  <input
+                    type="checkbox"
+                    name="allow-investigation"
+                    id="allow-investigation"
+                    value="yes"
+                  />
+                  <label for="allow-investigation">I understand the company may need further investigation to verify my claim. Thus, I authorize the company to obtain from any person or organization any further information required to evaluate this claim.</label>
+                </div>
+
+                <div class="radio-checkbox-input">
+                  <input
+                    type="checkbox"
+                    name="authorize-refund"
+                    id="authorize-refund"
+                    value="yes"
+                  />
+                  <label for="authorize-refund">I authorize any refund to the bank account listed on this claim form.</label>
+                </div>
+              </div>
+
+              <div class="policy-declaration-date text-input">
+                <label for="policy-declaration-date">Date</label>
+                <input type="date" name="policy-declaration-date" id="policy-declaration-date" />
+              </div>
+
+              <div class="signature text-input">
+                <label for="signature">Attach your Signature's Image</label>
+                <input type="file" name="signature-file" id="signature" />
+              </div>
+            </div>
+          </section>
+
+          <div class="line-seperator"></div>
+          
+          <section class="form-submit">
+            <button class="form-submit-btn">Submit</button>
+          </section>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
